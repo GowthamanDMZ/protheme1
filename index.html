@@ -26,6 +26,7 @@ Template Name: Wedding
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<!-- favicon links -->
 	<link rel="shortcut icon" type="image/ico" href="images/header/favicon.ico" />
+	
 </head>
 <body>
 <!-- preloader Start -->
@@ -40,8 +41,7 @@ Template Name: Wedding
 	<div class="wd_header_wrapper wd_single_index_menu">
 		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 			<div class="wd_logo">
-				<img src="images/header/logo.png" alt="Logo" title="Logo" class="img-responsive">
-				
+				<img onClick="close_window();return false;" src="images/header/logo.png" alt="Logo" title="Logo" class="img-responsive">
 			</div>
 		</div>
 		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -403,7 +403,45 @@ Template Name: Wedding
 
 <!-- Blo Wrapper End -->
 <!-- Contact Wrapper Start -->
-
+<section section-scroll='6' class="contact-area section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="con-list">
+                            <div class="icons">
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                            </div>
+                            <div class="content">
+                                <h2>Home</h2>
+                                <p>110, B Kalani Bagh, Dewas <br>M.P. INDIA #455001</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="con-list">
+                            <div class="icons">
+                                <span><i class="fas fa-phone fa-flip-horizontal"></i></span>
+                            </div>
+                            <div class="content">
+                                <h2>Phone</h2>
+                                <p>+ 91 90980 85819<br>+91 98272 55866</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="con-list">
+                            <div class="icons">
+                                <span><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <div class="content">
+                                <h2>Email Us</h2>
+                                <p>webstrot@gmail.com<br>handge.akshay@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 <!-- Contact Wrapper End -->
 <!-- Footer Wrapper Start -->
 <div section-scroll='6' class="wd_scroll_wrap">
@@ -441,6 +479,10 @@ $(window).on("load", function() {
 		});
 		wow.init();
 	});
+	
+	function close_window(){
+		close();
+	}
 </script>
 <!--main js file end-->
 </body>
